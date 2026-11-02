@@ -1,0 +1,167 @@
+# Capitales du monde - ligne 2 = Q1, ligne 3 = R1, etc.
+Quelle est la capitale de la France ?
+Paris
+Quelle est la capitale du Japon ?
+Tokyo
+Quelle est la capitale de l'Italie ?
+Rome
+Quelle est la capitale de l'Allemagne ?
+Berlin
+Quelle est la capitale de l'Espagne ?
+Madrid
+Quelle est la capitale du Portugal ?
+Lisbonne
+Quelle est la capitale du Royaume-Uni ?
+Londres
+Quelle est la capitale de la Belgique ?
+Bruxelles
+Quelle est la capitale de la Suisse ?
+Berne
+Quelle est la capitale de l'Autriche ?
+Vienne
+Quelle est la capitale des Pays-Bas ?
+Amsterdam
+Quelle est la capitale de la Suede ?
+Stockholm
+Quelle est la capitale de la Norvege ?
+Oslo
+Quelle est la capitale du Danemark ?
+Copenhague
+Quelle est la capitale de la Finlande ?
+Helsinki
+Quelle est la capitale de la Pologne ?
+Varsovie
+Quelle est la capitale de la Grece ?
+Athenes
+Quelle est la capitale de la Turquie ?
+Ankara
+Quelle est la capitale du Maroc ?
+Rabat
+Quelle est la capitale de l'Algerie ?
+Alger
+Quelle est la capitale de la Tunisie ?
+Tunis
+Quelle est la capitale de l'Egypte ?
+Le Caire
+Quelle est la capitale du Canada ?
+Ottawa
+Quelle est la capitale des Etats-Unis ?
+Washington
+Quelle est la capitale du Bresil ?
+Brasilia
+Quelle est la capitale de l'Argentine ?
+Buenos Aires
+Quelle est la capitale du Mexique ?
+Mexico
+Quelle est la capitale de l'Australie ?
+Canberra
+Quelle est la capitale de la Chine ?
+Pekin
+Quelle est la capitale de l'Inde ?
+New Delhi
+Quelle est la capitale de la Russie ?
+Moscou
+Quelle est la capitale de l'Ukraine ?
+Kiev
+Quelle est la capitale de la Roumanie ?
+Bucarest
+Quelle est la capitale de la Hongrie ?
+Budapest
+Quelle est la capitale de la Republique tcheque ?
+Prague
+Quelle est la capitale de la Slovaquie ?
+Bratislava
+Quelle est la capitale de la Bulgarie ?
+Sofia
+Quelle est la capitale de la Croatie ?
+Zagreb
+Quelle est la capitale de la Serbie ?
+Belgrade
+Quelle est la capitale de l'Irlande ?
+Dublin
+Quelle est la capitale de l'Islande ?
+Reykjavik
+Quelle est la capitale du Luxembourg ?
+Luxembourg
+Quelle est la capitale de Malte ?
+La Valette
+Quelle est la capitale de Chypre ?
+Nicosie
+Quelle est la capitale de l'Estonie ?
+Tallinn
+Quelle est la capitale de la Lettonie ?
+Riga
+Quelle est la capitale de la Lituanie ?
+Vilnius
+Quelle est la capitale de la Slovenie ?
+Ljubljana
+Quelle est la capitale de la Bosnie-Herzegovine ?
+Sarajevo
+Quelle est la capitale du Montenegro ?
+Podgorica
+Quelle est la capitale de la Macedoine du Nord ?
+Skopje
+Quelle est la capitale de l'Albanie ?
+Tirana
+Quelle est la capitale de la Coree du Sud ?
+Seoul
+Quelle est la capitale de la Coree du Nord ?
+Pyongyang
+Quelle est la capitale du Vietnam ?
+Hanoi
+Quelle est la capitale de la Thailande ?
+Bangkok
+Quelle est la capitale de l'Indonesie ?
+Jakarta
+Quelle est la capitale des Philippines ?
+Manille
+Quelle est la capitale de la Malaisie ?
+Kuala Lumpur
+Quelle est la capitale de Singapour ?
+Singapour
+Quelle est la capitale du Pakistan ?
+Islamabad
+Quelle est la capitale de l'Afghanistan ?
+Kaboul
+Quelle est la capitale de l'Iran ?
+Teheran
+Quelle est la capitale de l'Irak ?
+Bagdad
+Quelle est la capitale de la Syrie ?
+Damas
+Quelle est la capitale du Liban ?
+Beyrouth
+Quelle est la capitale de la Jordanie ?
+Amman
+Quelle est la capitale de l'Arabie saoudite ?
+Riyad
+Quelle est la capitale du Qatar ?
+Doha
+Quelle est la capitale des Emirats arabes unis ?
+Abou Dabi
+Quelle est la capitale d'Oman ?
+Mascate
+Quelle est la capitale du Yemen ?
+Sanaa
+Quelle est la capitale du Koweit ?
+Koweit
+Quelle est la capitale du Kenya ?
+Nairobi
+Quelle est la capitale de l'Ethiopie ?
+Addis-Abeba
+Quelle est la capitale du Nigeria ?
+Abuja
+Quelle est la capitale du Ghana ?
+Accra
+Quelle est la capitale du Senegal ?
+Dakar
+Quelle est la capitale de la Cote d'Ivoire ?
+Yamoussoukro
+Quelle est la capitale du Cameroun ?
+Yaounde
+Quelle est la capitale de la RDC ?
+Kinshasa
+Quelle est la capitale de l'Afrique du Sud ?
+Pretoria
+Quelle est la capitale de la Nouvelle-Zelande ?
+Wellington
