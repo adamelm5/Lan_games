@@ -30,6 +30,15 @@ int main() {
     char board[SIZE];
     memset(board, ' ', SIZE);
 
+    // Lecture de l'IP depuis ip.txt (pour affichage)
+    char ip[64] = "127.0.0.1";
+    FILE *f = fopen("ip.txt", "r");
+    if (f) {
+        if (fgets(ip, sizeof(ip), f)) ip[strcspn(ip, "\n")] = 0;
+        fclose(f);
+    }
+    printf("Serveur accessible sur l'IP : %s (port %d)\n", ip, PORT);
+
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) { perror("socket"); exit(1); }
     int opt = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
@@ -41,14 +50,13 @@ int main() {
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) { perror("bind"); exit(1); }
     if (listen(server_fd, 2) < 0) { perror("listen"); exit(1); }
 
-    printf("Serveur en attente de 2 joueurs sur le port %d...\n", PORT);
+    printf("En attente de 2 joueurs...\n");
 
     client1 = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
     printf("Joueur 1 connecté.\n");
     client2 = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
     printf("Joueur 2 connecté. La partie commence !\n");
 
-    // Envoi du symbole à chaque joueur (1 octet)
     char sym1 = 'X', sym2 = 'O';
     send(client1, &sym1, 1, 0);
     send(client2, &sym2, 1, 0);

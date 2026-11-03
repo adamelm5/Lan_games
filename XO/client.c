@@ -14,10 +14,6 @@
 
 void clear_screen() { printf("\033[2J\033[H"); }
 
-// Affiche une case :
-//  - vide  -> numéro (1-9) en jaune
-//  - 'X'   -> X en rouge
-//  - 'O'   -> O en vert
 void print_cell(char c, int index) {
     if (c == ' ') {
         printf(" " YELLOW "%d" RESET " ", index + 1);
@@ -43,7 +39,6 @@ void print_board(char board[SIZE], char my_symbol) {
         if (i < 2) printf("---+---+---\n");
     }
     printf("\n");
-    // Indication du symbole du joueur, coloré
     if (my_symbol == 'X') {
         printf("Vous êtes : " RED "X" RESET "\n\n");
     } else {
@@ -55,23 +50,30 @@ int main(void) {
     int sock = 0;
     struct sockaddr_in serv_addr;
 
+    // Lecture de l'IP depuis ip.txt
+    char ip[64] = "127.0.0.1";
+    FILE *f = fopen("ip.txt", "r");
+    if (f) {
+        if (fgets(ip, sizeof(ip), f)) ip[strcspn(ip, "\n")] = 0;
+        fclose(f);
+    }
+
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) { perror("socket"); return -1; }
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
 
-    if (inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr) <= 0) {
-        perror("inet_pton"); return -1;
+    if (inet_pton(AF_INET, ip, &serv_addr.sin_addr) <= 0) {
+        perror("inet_pton (adresse IP invalide)"); return -1;
     }
 
-    printf("Connexion au serveur...\n");
+    printf("Connexion au serveur sur %s:%d...\n", ip, PORT);
     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
         perror("connect"); return -1;
     }
 
     printf("En attente d'un autre joueur...\n");
 
-    // 1) Recevoir le symbole (1 octet)
     char my_symbol = '?';
     if (recv(sock, &my_symbol, 1, 0) <= 0) {
         printf("Connexion perdue.\n");
